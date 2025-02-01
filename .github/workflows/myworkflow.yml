@@ -37,6 +37,6 @@ jobs:
         ECR_REPOSITORY: sql-repo  # Your SQL repository name
         SQL_IMAGE_TAG: latest
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$SQL_IMAGE_TAG -f Dockerfile_sql .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$SQL_IMAGE_TAG -f Dockerfile_mysql .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$SQL_IMAGE_TAG
 
