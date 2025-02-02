@@ -56,3 +56,4 @@ docker run -p 8080:8080 -e APP_COLOR=$APP_COLOR -e DBHOST=$DBHOST -e DBPORT=$DBP
 New changes 123
 Making changes git add README.md git commit -m Updated README
 Changing the file to merge the branches
+Making changes123
