@@ -54,3 +54,4 @@ export APP_COLOR=blue
 docker run -p 8080:8080 -e APP_COLOR=$APP_COLOR -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e DBUSER=$DBUSER -e DBPWD=$DBPWD  my_app
 ```
 New changes 123
+Making changes git add README.md git commit -m Updated README
