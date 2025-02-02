@@ -1,11 +1,13 @@
 name: Deploy to ECR
 
 on:
-  push:
+  pull_request:
     branches: [main]  # Change this to development if needed
+    types: [closed]
 
 jobs:
   build:
+    if: github.event.pull_request.merged == true  # Ensure it runs only when merged
     name: Build and Push Images
     runs-on: ubuntu-latest
 
