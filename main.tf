@@ -45,7 +45,7 @@ resource "aws_security_group" "ec2_sg" {
 # Step 2 - Deploy EC2 instance in the default VPC
 resource "aws_instance" "my_amazon" {
   ami               = "ami-08e4e35cccc6189f4"
-  instance_type     = "t3.medium"
+  instance_type     = "t2.large"
   key_name          = aws_key_pair.week3.key_name
   availability_zone = "us-east-1b" # Ensure it's in the same AZ as the EBS volume
 
