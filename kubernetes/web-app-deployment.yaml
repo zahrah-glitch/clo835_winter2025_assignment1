@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: webapp-container
-        image: web:latest
+        image: webapp:latest
         ports:
         - containerPort: 8080
         env:
