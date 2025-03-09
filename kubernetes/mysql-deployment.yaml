@@ -4,7 +4,7 @@ metadata:
   name: mysql-deployment
   namespace: mysql-ns
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: mysql
@@ -20,7 +20,8 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: sql:latest
+        image: mysql:latest
+        
         ports:
         - containerPort: 3306
         env:
